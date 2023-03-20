@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { AmplifyProvider } from "@aws-amplify/ui-react";
+import "@aws-amplify/ui-react/styles.css";
+import NavBar from "./ui-components/NavBar";
+import YoutubeVideoCollection from "./ui-components/YoutubeVideoCollection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AmplifyProvider>
+      <NavBar style={{ margin: "auto" }} />
+      <YoutubeVideoCollection
+        style={{ margin: "auto" }}
+        overrideItems={({ item, index }) => ({
+          videoArea: (
+            <iframe
+              width="560"
+              height="315"
+              src={"https://www.youtube.com/embed/" + item.video_code}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          ),
+        })}
+      />
+    </AmplifyProvider>
   );
 }
 

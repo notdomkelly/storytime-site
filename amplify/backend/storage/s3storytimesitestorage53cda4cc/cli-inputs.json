@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3storytimesitestorage53cda4cc",
+  "bucketName": "storytime-site-storage-53cda4cc",
+  "policyUUID": "4200bbfd",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}
