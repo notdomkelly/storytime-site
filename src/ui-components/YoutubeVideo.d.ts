@@ -14,7 +14,7 @@ export declare type YoutubeVideoOverridesProps = {
     "Video Area"?: PrimitiveOverrideProps<FlexProps>;
     "Card Area"?: PrimitiveOverrideProps<FlexProps>;
     "Text Group"?: PrimitiveOverrideProps<FlexProps>;
-    "$99 USD"?: PrimitiveOverrideProps<TextProps>;
+    Title?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type YoutubeVideoProps = React.PropsWithChildren<Partial<FlexProps> & {
     videoArea?: React.ReactNode;

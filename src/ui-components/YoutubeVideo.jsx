@@ -14,7 +14,7 @@ export default function YoutubeVideo(props) {
     <Flex
       gap="0"
       direction="column"
-      width="320px"
+      width="560px"
       height="unset"
       justifyContent="center"
       alignItems="flex-start"
@@ -27,12 +27,11 @@ export default function YoutubeVideo(props) {
       <Flex
         gap="16px"
         direction="column"
-        width="unset"
+        width="560px"
         height="unset"
         justifyContent="flex-start"
         alignItems="flex-start"
         shrink="0"
-        alignSelf="stretch"
         position="relative"
         padding="16px 16px 16px 16px"
         children={videoArea}
@@ -84,7 +83,7 @@ export default function YoutubeVideo(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children={video?.title}
-            {...getOverrideProps(overrides, "$99 USD")}
+            {...getOverrideProps(overrides, "Title")}
           ></Text>
         </Flex>
       </Flex>

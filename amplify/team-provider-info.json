@@ -1,4 +1,28 @@
 {
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-storytimesite-prod-163441-authRole",
+      "UnauthRoleArn": "arn:aws:iam::562839635894:role/amplify-storytimesite-prod-163441-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::562839635894:role/amplify-storytimesite-prod-163441-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-storytimesite-prod-163441-deployment",
+      "UnauthRoleName": "amplify-storytimesite-prod-163441-unauthRole",
+      "StackName": "amplify-storytimesite-prod-163441",
+      "StackId": "arn:aws:cloudformation:us-east-2:562839635894:stack/amplify-storytimesite-prod-163441/1d6ba600-c73d-11ed-8c3a-06b5dfe4e564",
+      "AmplifyAppId": "d1cqo7e3hag1cz"
+    },
+    "categories": {
+      "auth": {
+        "storytimesite": {}
+      },
+      "storage": {
+        "s3storytimesitestorage53cda4cc": {}
+      },
+      "api": {
+        "storytimesite": {}
+      }
+    }
+  },
   "staging": {
     "awscloudformation": {
       "AuthRoleName": "amplify-storytimesite-staging-132737-authRole",
